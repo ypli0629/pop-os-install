@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install nvidia-driver-550
 
 # apt
-sudo apt install wget git build-essential fcitx5-chinese-addons gnome-browser-connector gnome-tweaks gnome-shell-extensions -y
+sudo apt install wget git zsh build-essential fcitx5-chinese-addons gnome-browser-connector gnome-tweaks gnome-shell-extensions -y
 
 # snap
 
@@ -66,3 +66,5 @@ git clone https://github.com/vinceliuice/WhiteSur-cursors.git
 cd WhiteSur-cursors
 sudo ./install.sh
 cd ..
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
