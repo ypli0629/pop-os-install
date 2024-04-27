@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env /bin/bash
 
 # apt
 sudo apt install wget git build-essential fcitx5-chinese-addons gnome-browser-connector gnome-tweaks gnome-shell-extensions -y
