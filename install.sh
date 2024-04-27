@@ -1,5 +1,16 @@
 #!/bin/bash
 
+paths=(source work caffe learn)
+for path in "${paths[@]}"
+do
+    mkdir -p "~/Desktop/$path"
+done
+
+mkdir -p ~/Desktop/source
+mkdir -p ~/Desktop/work
+mkdir -p ~/Desktop/caffe
+mkdir -p ~/Desktop/learn
+
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo apt install nvidia-driver-550
