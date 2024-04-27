@@ -4,8 +4,33 @@
 sudo apt install wget git build-essential fcitx5-chinese-addons gnome-browser-connector gnome-tweaks gnome-shell-extensions -y
 
 # snap
-sudo snap install clion cmake code datagrip gnome-calendar go goland intellij-idea-ultimate multipass \
-    postman pycharm-professional rustup telegram-desktop termius-app todoist typora webstorm xmind
+
+packages=(
+    "clion"
+    "cmake"
+    "code"
+    "datagrip"
+    "gnome-calendar"
+    "go"
+    "goland"
+    "intellij-idea-ultimate"
+    "multipass"
+    "postman"
+    "pycharm-professional"
+    "rustup"
+    "telegram-desktop"
+    "termius-app"
+    "todoist"
+    "typora"
+    "webstorm"
+    "xmind"
+)
+
+# Loop through each package and install it using snap
+for package in "${packages[@]}"
+do
+    sudo snap install "$package"
+done
 
 # docker-desktop
 wget https://desktop.docker.com/linux/main/amd64/145265/docker-desktop-4.29.0-amd64.deb
