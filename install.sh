@@ -5,26 +5,8 @@ sudo apt install wget git build-essential fcitx5-chinese-addons gnome-browser-co
 
 # snap
 
-packages=(
-    "clion"
-    "cmake"
-    "code"
-    "datagrip"
-    "gnome-calendar"
-    "go"
-    "goland"
-    "intellij-idea-ultimate"
-    "multipass"
-    "postman"
-    "pycharm-professional"
-    "rustup"
-    "telegram-desktop"
-    "termius-app"
-    "todoist"
-    "typora"
-    "webstorm"
-    "xmind"
-)
+packages=("clion" "cmake" "code" "datagrip" "gnome-calendar" "go" "goland" "intellij-idea-ultimate" "multipass" \
+    "postman" "pycharm-professional" "rustup" "telegram-desktop" "termius-app" "todoist" "typora" "webstorm" "xmind")
 
 # Loop through each package and install it using snap
 for package in "${packages[@]}"
