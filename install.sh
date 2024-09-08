@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt upgrade -y && sudo apt dist-upgrade -y
+sudo apt install zsh fcitx5-chinese-addons -y
+
 dirs=(source work caffe learn)
 for d in "${dirs[@]}"
 do
