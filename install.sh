@@ -1,9 +1,9 @@
 #!/bin/bash
 
-paths=(source work caffe learn)
-for path in "${paths[@]}"
+dirs=(source work caffe learn)
+for d in "${dirs[@]}"
 do
-    mkdir -p "~/Desktop/$path"
+    mkdir -p "~/Desktop/$d"
 done
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
