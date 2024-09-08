@@ -7,7 +7,7 @@ sudo apt install zsh fcitx5-chinese-addons -y
 dirs=(source work caffe learn)
 for d in "${dirs[@]}"
 do
-    mkdir -p "~/Desktop/$d"
+    mkdir -p ~/Desktop/$d
 done
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -60,7 +60,7 @@ sudo apt install .//docker-desktop-amd64.deb -y
 wget https://launchpadlibrarian.net/704701345/libjavascriptcoregtk-4.0-18_2.43.3-1_amd64.deb
 wget https://launchpadlibrarian.net/704701349/libwebkit2gtk-4.0-37_2.43.3-1_amd64.deb
 sudo dpkg -i ./libjavascriptcoregtk-4.0-18_2.43.3-1_amd64.deb ./libwebkit2gtk-4.0-37_2.43.3-1_amd64.deb
-wget https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.0/clash-verge_1.6.0_amd64.deb
+wget https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.0/clash-verge_1.7.7_amd64.deb
 sudo apt install ./clash-verge_1.7.7_amd64.deb
 
 # switchhosts
