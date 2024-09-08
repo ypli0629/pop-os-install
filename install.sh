@@ -67,4 +67,7 @@ sudo apt install ./clash-verge_1.7.7_amd64.deb
 wget https://github.com/oldj/SwitchHosts/releases/download/v4.2.0-beta/SwitchHosts_linux_amd64_4.2.0.6105.deb
 sudo apt install ./SwitchHosts_linux_amd64_4.2.0.6105.deb -y
 
+# zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
