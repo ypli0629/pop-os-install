@@ -14,11 +14,10 @@ sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 # sudo apt install nvidia-driver-560 -y
 
 # snap
-packages=("com.calibre_ebook.calibre" \ 
+packages=("com.calibre_ebook.calibre" \
     "com.discordapp.Discord" \
     "com.getpostman.Postman" \
-    "com.google.Chrome" \ 
-    "com.jetbrains.IntelliJ-IDEA-Ultimate" \
+    "com.google.Chrome" \
     "com.obsproject.Studio" \
     "com.qq.QQ" \
     "com.qq.QQmusic" \
@@ -26,11 +25,12 @@ packages=("com.calibre_ebook.calibre" \
     "com.visualstudio.code" \
     "io.github.shiftey.Desktop" \
     "org.blender.Blender" \
-    "org.gimp.GIMP" \ 
+    "org.gimp.GIMP" \
     "org.telegram.desktop" \
     "com.termius.Termius" \
     "io.typora.Typora" \
-    "net.xmind.XMind")
+    "net.xmind.XMind" \
+    "com.jetbrains.IntelliJ-IDEA-Ultimate" )
 
 # Loop through each package and install it using snap
 for package in "${packages[@]}"
