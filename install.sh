@@ -4,43 +4,46 @@ sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 sudo apt install zsh fcitx5-chinese-addons -y
 
-dirs=(source work caffe learn)
-for d in "${dirs[@]}"
-do
-    mkdir -p ~/Desktop/$d
-done
+mkdir -p ~/Desktop/source
+mkdir -p ~/Desktop/work
+mkdir -p ~/Desktop/caffe
+mkdir -p ~/Desktop/learn
+
+# git
+git config --global user.email "liyapeng0629@gmail.com"
+git config --global user.name "ypli0629"
+git config --global credential.helper store
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
-# sudo add-apt-repository ppa:graphics-drivers/ppa
-# sudo apt update
-# sudo apt install nvidia-driver-560 -y
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-driver-560 -y
 
-# snap
-packages=("com.calibre_ebook.calibre" \
-    "com.discordapp.Discord" \
-    "com.getpostman.Postman" \
-    "com.google.Chrome" \
-    "com.obsproject.Studio" \
-    "com.qq.QQ" \
-    "com.qq.QQmusic" \
-    "com.tencent.WeChat" \
-    "com.visualstudio.code" \
-    "io.github.shiftey.Desktop" \
-    "org.blender.Blender" \
-    "org.gimp.GIMP" \
-    "org.telegram.desktop" \
-    "com.termius.Termius" \
-    "io.typora.Typora" \
-    "net.xmind.XMind" \
-    "com.jetbrains.IntelliJ-IDEA-Ultimate" )
+# packages=("com.calibre_ebook.calibre" \
+#     "com.discordapp.Discord" \
+#     "com.getpostman.Postman" \
+#     "com.google.Chrome" \
+#     "com.obsproject.Studio" \
+#     "com.qq.QQ" \
+#     "com.qq.QQmusic" \
+#     "com.tencent.WeChat" \
+#     "com.visualstudio.code" \
+#     "io.github.shiftey.Desktop" \
+#     "org.blender.Blender" \
+#     "org.gimp.GIMP" \
+#     "org.telegram.desktop" \
+#     "com.termius.Termius" \
+#     "io.typora.Typora" \
+#     "net.xmind.XMind" \
+#     "com.jetbrains.IntelliJ-IDEA-Ultimate" )
 
-# Loop through each package and install it using snap
-for package in "${packages[@]}"
-do
-    sudo flatpak install "$package"
-done
+# # Loop through each package and install it using snap
+# for package in "${packages[@]}"
+# do
+#     sudo flatpak install "$package"
+# done
 
 # docker-desktop
 sudo apt-get install ca-certificates curl
