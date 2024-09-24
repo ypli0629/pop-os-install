@@ -45,6 +45,8 @@ sudo apt install nvidia-driver-560 -y
 #     sudo flatpak install "$package"
 # done
 
+git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim
+
 # docker-desktop
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
