@@ -63,7 +63,7 @@ sudo apt install .//docker-desktop-amd64.deb -y
 wget https://launchpadlibrarian.net/704701345/libjavascriptcoregtk-4.0-18_2.43.3-1_amd64.deb
 wget https://launchpadlibrarian.net/704701349/libwebkit2gtk-4.0-37_2.43.3-1_amd64.deb
 sudo dpkg -i ./libjavascriptcoregtk-4.0-18_2.43.3-1_amd64.deb ./libwebkit2gtk-4.0-37_2.43.3-1_amd64.deb
-wget https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.0/clash-verge_1.7.7_amd64.deb
+wget https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.7/clash-verge_1.7.7_amd64.deb
 sudo apt install ./clash-verge_1.7.7_amd64.deb
 
 # switchhosts
