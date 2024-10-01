@@ -17,9 +17,9 @@ git config --global credential.helper store
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-sudo apt install nvidia-driver-560 -y
+# sudo add-apt-repository ppa:graphics-drivers/ppa
+# sudo apt update
+# sudo apt install nvidia-driver-560 -y
 
 # packages=("com.calibre_ebook.calibre" \
 #     "com.discordapp.Discord" \
