@@ -17,34 +17,6 @@ git config --global credential.helper store
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
-# sudo add-apt-repository ppa:graphics-drivers/ppa
-# sudo apt update
-# sudo apt install nvidia-driver-560 -y
-
-# packages=("com.calibre_ebook.calibre" \
-#     "com.discordapp.Discord" \
-#     "com.getpostman.Postman" \
-#     "com.google.Chrome" \
-#     "com.obsproject.Studio" \
-#     "com.qq.QQ" \
-#     "com.qq.QQmusic" \
-#     "com.tencent.WeChat" \
-#     "com.visualstudio.code" \
-#     "io.github.shiftey.Desktop" \
-#     "org.blender.Blender" \
-#     "org.gimp.GIMP" \
-#     "org.telegram.desktop" \
-#     "com.termius.Termius" \
-#     "io.typora.Typora" \
-#     "net.xmind.XMind" \
-#     "com.jetbrains.IntelliJ-IDEA-Ultimate" )
-
-# # Loop through each package and install it using snap
-# for package in "${packages[@]}"
-# do
-#     sudo flatpak install "$package"
-# done
-
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim
 
 # docker-desktop
@@ -71,20 +43,3 @@ sudo apt install ./clash-verge_1.7.7_amd64.deb
 # switchhosts
 wget https://github.com/oldj/SwitchHosts/releases/download/v4.2.0-beta/SwitchHosts_linux_amd64_4.2.0.6105.deb
 sudo apt install ./SwitchHosts_linux_amd64_4.2.0.6105.deb -y
-
-# zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-tee -a ~/.zshrc <<-'EOF'
-	alias szsh="source ~/.zshrc"
-	alias nzsh="nvim ~/.zshrc"
-	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
-	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
-
-	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
-	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-EOF
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-source ~/.zshrc
-# brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
