@@ -2,7 +2,7 @@
 
 sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
-sudo apt install zsh fcitx5-chinese-addons -y
+sudo apt install zsh -y
 
 mkdir -p ~/Desktop/source
 mkdir -p ~/Desktop/work
