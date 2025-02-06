@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt install fcitx5-chinese-addons -y
 
-sudo echo "GTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx\nSDL_IM_MODULE=fcitx\nGLFW_IM_MODULE=ibus" > /etc/environment.d/fcitx.conf
+sudo mv /etc/profile.d/pop-im-ibus.sh /etc/profile.d/pop-im-ibus.sh.bak
+sudo echo "export INPUT_METHOD=fcitx\nexport GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx" | sudo tee /etc/profile.d/fcitx5.sh > /dev/null
 
 curl -sSL https://www.debuggerx.com/fcitx5_customizer/fcitx5_customizer.sh | bash -s -- recommend
