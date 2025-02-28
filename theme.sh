@@ -4,7 +4,7 @@ mkdir themes
 cd themes
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
-./install.sh -i simple -l -N stable
+./install.sh -l -N stable
 cd ..
 
 #git clone https://github.com/vinceliuice/grub2-themes.git
