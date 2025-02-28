@@ -7,10 +7,10 @@ cd WhiteSur-gtk-theme
 ./install.sh -l -N stable
 cd ..
 
-#git clone https://github.com/vinceliuice/grub2-themes.git
-#cd grub2-themes
-#sudo ./install.sh -t vimix -s 2k -b
-#cd ..
+# git clone https://github.com/vinceliuice/grub2-themes.git
+# cd grub2-themes
+# sudo ./install.sh -t vimix -s 2k -b
+# cd ..
 
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 cd WhiteSur-icon-theme
@@ -23,7 +23,7 @@ cd WhiteSur-wallpapers
 sudo ./install-gnome-backgrounds.sh
 cd ..
 
-git clone https://github.com/vinceliuice/WhiteSur-cursors.git
-cd WhiteSur-cursors
-sudo ./install.sh
-cd ..
+# git clone https://github.com/vinceliuice/WhiteSur-cursors.git
+# cd WhiteSur-cursors
+# sudo ./install.sh
+# cd ..
