@@ -3,7 +3,6 @@
 packages=("com.calibre_ebook.calibre" 
     "com.discordapp.Discord" 
     "com.getpostman.Postman" 
-    "com.google.Chrome" 
     "com.obsproject.Studio" 
     "com.qq.QQ" 
     "com.qq.QQmusic" 
