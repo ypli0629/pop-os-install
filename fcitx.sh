@@ -7,4 +7,7 @@ sh /etc/profile.d/fcitx5.sh
 
 git clone https://github.com/Mintimate/oh-my-rime $HOME/.local/share/fcitx5/rime
 
+git clone https://github.com/witt-bit/fcitx5-theme-mint.git
+sh fcitx5-theme-mint/install.sh
+
 # curl -sSL https://www.debuggerx.com/fcitx5_customizer/fcitx5_customizer.sh | bash -s -- recommend
