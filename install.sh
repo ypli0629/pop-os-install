@@ -14,8 +14,8 @@ git config --global user.email "liyapeng0629@gmail.com"
 git config --global user.name "ypli0629"
 git config --global credential.helper store
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo --user
-flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub --user
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo --user
+# flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub --user
 
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim
 
