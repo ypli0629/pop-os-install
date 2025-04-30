@@ -2,7 +2,7 @@
 sudo apt install fcitx5 fcitx5-chinese-addons fcitx5-rime librime-plugin-lua -y
 
 # sudo mv /etc/profile.d/pop-im-ibus.sh /etc/profile.d/pop-im-ibus.sh.bak
-sudo echo -e "export INPUT_METHOD=fcitx\nexport GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx" | sudo tee /etc/profile.d/fcitx5.sh > /dev/null
+sudo echo -e "INPUT_METHOD=fcitx\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee /etc/environment.d/fcitx5.conf > /dev/null
 sh /etc/profile.d/fcitx5.sh
 
 git clone https://github.com/Mintimate/oh-my-rime $HOME/.local/share/fcitx5/rime
